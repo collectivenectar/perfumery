@@ -1,0 +1,442 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+*{
+  margin: 0;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.nanum{
+  font-family: 'Nanum Myeongjo', serif;
+}
+.nanum-gothic{
+  font-family: 'Nanum Gothic', serif;
+}
+.waterbrush{
+  font-family: 'Water Brush', cursive;
+}
+.montserrat{
+  font-family: 'Montserrat', montserrat;
+}
+.light{
+  font-weight: lighter;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body{
+  margin: 0;
+}
+header {
+  height: 9em;
+  max-width: 100%;
+  background: #cfe1b9;
+  margin-bottom: 0;
+  border-bottom: solid #cfe1b9 2px;
+}
+header > span{
+  height: 2em;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 0.4em;
+  background: #FFE5D9;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  height: 7em;
+  padding-left: 1em;
+}
+nav > *{
+  margin-left: 0;
+  margin-top: 1.9em;
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+  height: 3em;
+}
+nav > ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+nav > ul > li{
+  list-style-type: none;
+  padding: 0.8em 6%;
+  border: solid black 1px;
+  transition: all 0.5s ease-in-out;
+}
+nav > div{
+  justify-content:flex-start;
+  flex-direction: column;
+  text-align: center;
+  background: #cfe1b9;
+  margin-top: 1em;
+}
+nav > div > h3{
+  font-size: 2rem;
+}
+nav > div + ul {
+  justify-content: space-around;
+  list-style-type: none;
+}
+nav > ul > li:hover{
+  background: #FFE5D9;
+}
+.search{
+  display: flex;
+  height: 3em;
+  transition: all 0.5s ease-in-out;
+}
+.search > *{
+  padding: 0.8rem 0.7em;
+  height: 100%;
+  margin-right:0.5em;
+}
+.search:hover{
+  background-color: #FFE5D9;
+}
+.search > input{
+  width: 12em;
+  padding: 0;
+  font-size: 1.2em;
+  background-color: #cfe1b9;
+  border: solid black 1px;
+}
+#main{
+  height: 44em;
+  background-image: url('./imgs/perfumebottlesonfur.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#main > section {
+  width: 100%;
+  position: absolute;
+  top: 35em;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10em;
+}
+#main > h1{
+  padding-top: 5rem;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 14rem;
+  color: #FFE5D9;
+}
+#main > section > a {
+  text-decoration: none;
+  color: black;
+  border-radius: 4em;
+  font-size: 1.2em;
+  margin-left: 2em;
+  padding: 2em 2em;
+  background: rgba(255, 229, 217, 1);
+  transition-property: background;
+  transition-duration: 0.7s;
+  transition-delay: 0s;
+}
+#main > section > a:first-of-type{
+  margin-left: 0;
+}
+#main > section > a:hover{
+  background: rgba(255, 249, 217, 1);
+}
+#seasonal-items{
+  background: #FFE5D9;
+  margin: 0;
+  overflow: auto;
+}
+#bottles-carousel{
+  position: relative;
+  width: 100%;
+  height: 40em;
+  border: solid transparent 1px;
+}
+#seasonal-items > h3{
+  width: 50%;
+  font-size: 3em;
+  text-align: center;
+  margin: 2em auto 0 auto;
+}
+#seasonal-items > div{
+  width: 50%;
+  margin: 2rem auto 0 auto;
+}
+#seasonal-items > div > span{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.carousel-frame{
+  width: 90%;
+  margin: 2.5% 5% 0 5%;
+  height: 35em;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.carousel-frame.fadeout{
+  opacity: 0;
+}
+.carousel-frame.fadein{
+  opacity: 1;
+}
+.carousel-frame > div{
+  width: 50%;
+  height: 35em;
+}
+.bottle-text{
+  width: 100%;
+  text-align: center;
+  padding: 15% 0;
+}
+.bottle-text > h2{
+  font-size: 3em;
+}
+.bottle-text > p{
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.bottle-img{
+  /* Here I need to style the images in a more fixed way, absolute or relative? */
+  width: 40%;
+  height: auto;
+  border-radius: 5px;
+  position: absolute;
+  left: 30%;
+  top: 10%;
+}
+div.bottle-text + div{
+  width: 45%;
+  left: 50%;
+  position: absolute;
+}
+.carousel-nav{
+  width: 100%;
+  margin-top: -1em;
+}
+.carousel-nav ul {
+  width: 15%;
+  margin: auto;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.selector-dots{
+  border: solid black 1px;
+  margin: auto;
+  height: 2em;
+  padding: 0 1em;
+  border-radius: 50%;
+  background: transparent;
+}
+.selector-dots.current{
+  background: black;
+}
+.carousel-arrows{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  height: 7em;
+}
+.carousel-arrows > ul{
+  width: 100%;
+  height: 7em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+}
+.carousel-arrows ul > li{
+  list-style-type: none;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  padding: 0.8em;
+  margin-left: 1em;
+  transition-property: border;
+  transition-duration: 0.7s;
+  transition-delay: 0s;
+}
+.carousel-arrows ul > li:hover{
+  border: solid #FFCAD4 1px;
+}
+.carousel-arrows i{
+  font-size: 3em;
+  padding: 0.05em 0.2em;
+  width: 1em;
+  height: 1em;
+}
+.carousel-arrows > ul > li + li{
+  width: 6%;
+  margin-left: 0;
+  margin-right: 1em;
+}
+.carousel-arrows > ul > li + li > i{
+  padding: 0 0.25em;
+}
+#perfume-bottles{
+  width: 100%;
+  height: 50em;
+  background: #cfe1b9;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 5rem;
+}
+#perfume-bottles > *{
+  text-align: right;
+  width: 30%;
+}
+#bottles-title{
+  align-self: center;
+  height: 90%;
+  width: 40%;
+}
+#bottles-title > h2{
+  font-weight: lighter;
+  font-size: 3rem;
+  margin-bottom: 15rem;
+  border-bottom: solid black 1px;
+}
+#bottles-title > p{
+  font-size: 2.5rem;
+  margin-bottom: 11rem;
+}
+#bottles-title > p + p{
+font-size: 1rem;
+}
+#bottles-title + section {
+  width: 20%;
+  align-self: flex-end;
+  margin-bottom: 7.5rem;
+  text-align: left;
+}
+#bottles-title + section > ul{
+}
+#bottles-title + section + section{
+  width: 40%;
+}
+.bottles > img{
+  width: 95%;
+  height: auto;
+  border-radius: 35px;
+  display: block;
+  margin: auto;
+}
+#sideways{
+  display: block;
+  position: fixed;
+  left: 0;
+}
+footer{
+  position: absolute;
+  width: 100%;
+  height: 20em;
+  padding: 1em 2em;
+  background: #FFE5D9;
+  display: flex;
+
+}
+#footer-copy{
+  width: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  font-size: 1em;
+  line-height: 2em;
+}
+#footer-links{
+  width: 33.3333%;
+}
+#footer-links > ul {
+  list-style-type: none;
+  font-size: 1em;
+  margin-left: 25%;
+  margin-top: 1.5em;
+  width: 50%;
+}
+#footer-links > ul > li {
+  line-height: 2em;
+}
+#footer-links > ul > li > a{
+  text-decoration: none;
+  color: black;
+}
+#footer-action{
+  width: 33.3333%;
+  text-align: center;
+}
+#footer-action > div{
+  display: block;
+  min-height: 2em;
+  padding: 0 1em;
+}
+#footer-action > a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+#footer-action > div > form{
+  height: 2rem;
+  margin-bottom: 2.5rem;
+}
+#footer-action > div > form > input{
+  height: 3rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+#footer-action > div > form > a{
+  text-decoration: none;
+  color: black;
+  background: #cfe1b9;
+  padding: 1rem;
+}
+#footer-action > a{
+  display: block;
+  width: 50%;
+  padding: 1em;
+  margin-left: 25%;
+}
+#address{
+  margin-top: 6rem;
+  text-align: right;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
