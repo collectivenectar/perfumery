@@ -440,3 +440,23 @@ footer{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+a:focus, button:focus, input:focus {
+  outline: 2px solid #FFCAD4;
+}
+
+/* Hide visually but accessible "Skip to Content" link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}

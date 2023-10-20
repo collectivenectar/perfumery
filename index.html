@@ -1,20 +1,49 @@
+<!-- TODO:  -->
+<!-- EJS? What are more standard methods of dynamic HTML designs in the frontend world? -->
+<!-- How do I implement something vanilla? -->
+<!-- Parallax mouse visuals -->
+<!-- Event driven functionality -->
+<!-- Fake database to spoof user profiles, perfumes, checkout process, a fake auction site or something -->
+
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="Your description goes here">
-    	<meta name="keywords" content="one, two, three">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Your description goes here"
+    />
+    <meta
+      name="keywords"
+      content="one, two, three"
+    />
 
-		<title>Blank Template</title>
+    <title>Blank Template</title>
 
-		<!-- external CSS link -->
-		<script src="https://kit.fontawesome.com/2f00c46609.js" crossorigin="anonymous"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Water+Brush&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="main.css">
-	</head>
-	<body>
+    <!-- external CSS link -->
+    <script
+      src="https://kit.fontawesome.com/2f00c46609.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Water+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="main.css"
+    />
+  </head>
+  <body>
     <header class="montserrat">
       <span>Free Shipping on orders over $100</span>
       <nav>
@@ -28,82 +57,135 @@
           <h4 class="montserrat">PERFUMERY</h4>
         </div>
         <ul class="cinzel">
-					<form class="search" action="index.html" method="post">
-						<input type="text" name="" value="" class="cardo">
-						<li><i class="fa-solid fa-magnifying-glass"></i></li>
-						<li><a>Search</a></li>
-					</form>
+          <form
+            class="search"
+            action="index.html"
+            method="post"
+          >
+            <input
+              type="text"
+              name=""
+              value=""
+              class="cardo"
+            />
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><a>Search</a></li>
+          </form>
         </ul>
       </nav>
     </header>
     <section id="main">
-			<h1 class="waterbrush">aeflora</h1>
-      <!-- <section class="nanum-gothic">
+      <h1 class="waterbrush">aeflora</h1>
+      <section class="nanum-gothic">
         <a href="#">Sustainably Sourced</a>
         <a href="#">Antique Bottles</a>
         <a href="#">Seasonal & Limited Editions</a>
-      </section> -->
-    </section>
-		<section id="seasonal-items">
-			<h3 class="montserrat light">2022 Spring Collection</h3>
-			<div class="montserrat">
-				<span>Sustainably sourced and produced</span>
-				<span>Limited edition scents</span>
-			</div>
-			<section id="bottles-carousel">
-				<div class="carousel-frame">
-					<div class="bottle-text">
-						<h2 class="perfume-headline waterbrush light">Maltese Shore</h2>
-						<p class="perfume-notes montserrat">Main notes: Coconut, Sandalwood, Vanilla Musk, and Sea Salt</p>
-					</div>
-					<div class="" id="img-container">
-						<img class="bottle-img" src="./imgs/carousel1.jpg" alt="">
-						<img class="bottle-img" src="./imgs/carousel2.jpg" alt="">
-						<img class="bottle-img" src="./imgs/carousel3.jpg" alt="">
-						<img class="bottle-img" src="./imgs/carousel4.jpg" alt="">
-					</div>
-				</div>
-				<div class="carousel-nav">
-					<ul>
-						<li class="selector-dots current" id="perfume-0"></li>
-						<li class="selector-dots" id="perfume-1"></li>
-						<li class="selector-dots" id="perfume-2"></li>
-						<li class="selector-dots" id="perfume-3"></li>
-					</ul>
-				</div>
-				<div class="carousel-arrows">
-					<ul>
-						<li id="carousel-prev"><i class="fa-solid fa-chevron-left"></i></li>
-						<li id="carousel-next"><i class="fa-solid fa-chevron-right"></i></li>
-					</ul>
-				</div>
-			</section>
-		</section>
-    <section id="perfume-bottles">
-			<section id="bottles-title">
-				<h2 class="montserrat"><em>Les Bouteilles</em></h2>
-				<p class="montserrat">we offer a selection of <strong>vintage</strong> and <strong>reclaimed</strong> perfume bottles</p>
-				<p class="nanum-gothic"><strong>One of a kind</strong> - sustainable <em>and</em> reduces waste</p>
-			</section>
-      <section>
-				<ul class="nanum">
-					<li><em>hand selected</em></li>
-					<li><em>reusable</em></li>
-					<li><em>recycled packaging</em></li>
-				</ul>
       </section>
-			<section>
-				<div class="bottles">
-					<img src="./imgs/vintage-bottles1.png" alt="">
-				</div>
-			</section>
-			<div id="sideways">
-				<h4>aeflora</h4>
-			</div>
+    </section>
+    <section id="seasonal-items">
+      <h3 class="montserrat light">2022 Spring Collection</h3>
+      <div class="montserrat">
+        <span>Sustainably sourced and produced</span>
+        <span>Limited edition scents</span>
+      </div>
+      <section id="bottles-carousel">
+        <div class="carousel-frame">
+          <div class="bottle-text">
+            <h2 class="perfume-headline waterbrush light">Maltese Shore</h2>
+            <p class="perfume-notes montserrat">
+              Main notes: Coconut, Sandalwood, Vanilla Musk, and Sea Salt
+            </p>
+          </div>
+          <div
+            class=""
+            id="img-container"
+          >
+            <img
+              class="bottle-img"
+              src="./imgs/carousel1.jpg"
+              alt=""
+            />
+            <img
+              class="bottle-img"
+              src="./imgs/carousel2.jpg"
+              alt=""
+            />
+            <img
+              class="bottle-img"
+              src="./imgs/carousel3.jpg"
+              alt=""
+            />
+            <img
+              class="bottle-img"
+              src="./imgs/carousel4.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="carousel-nav">
+          <ul>
+            <li
+              class="selector-dots current"
+              id="perfume-0"
+            ></li>
+            <li
+              class="selector-dots"
+              id="perfume-1"
+            ></li>
+            <li
+              class="selector-dots"
+              id="perfume-2"
+            ></li>
+            <li
+              class="selector-dots"
+              id="perfume-3"
+            ></li>
+          </ul>
+        </div>
+        <div class="carousel-arrows">
+          <ul>
+            <li id="carousel-prev"><i class="fa-solid fa-chevron-left"></i></li>
+            <li id="carousel-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <section id="perfume-bottles">
+      <section id="bottles-title">
+        <h2 class="montserrat"><em>Les Bouteilles</em></h2>
+        <p class="montserrat">
+          we offer a selection of <strong>vintage</strong> and
+          <strong>reclaimed</strong> perfume bottles
+        </p>
+        <p class="nanum-gothic">
+          <strong>One of a kind</strong> - sustainable <em>and</em> reduces
+          waste
+        </p>
+      </section>
+      <section>
+        <ul class="nanum">
+          <li><em>hand selected</em></li>
+          <li><em>reusable</em></li>
+          <li><em>recycled packaging</em></li>
+        </ul>
+      </section>
+      <section>
+        <div class="bottles">
+          <img
+            src="./imgs/vintage-bottles1.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <div id="sideways">
+        <h4>aeflora</h4>
+      </div>
     </section>
     <footer class="montserrat">
       <section id="footer-copy">
-				<span class="waterbrush">aeflora</span>
+        <span class="waterbrush">aeflora</span>
         <span>Sustainably Sourced.</span>
         <span>No synthetic chemicals.</span>
         <span>One-of-a-kind bottles</span>
@@ -115,28 +197,43 @@
           <li><a href="#">Shipping</a></li>
           <li><a href="#">Come visit us!</a></li>
           <li><a href="#">About Aeflora</a></li>
-					<li><a href="#">Staff</a></li>
+          <li><a href="#">Staff</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
       </section>
-      <section id="footer-action" class="nanum">
+      <section
+        id="footer-action"
+        class="nanum"
+      >
         <a href="#">Get Updates!</a>
         <div class="">
-          <form class="" action="index.html" method="post">
-            <input type="text" name="Email" value="" placeholder="Enter email">
+          <form
+            class=""
+            action="index.html"
+            method="post"
+          >
+            <input
+              type="text"
+              name="Email"
+              value=""
+              placeholder="Enter email"
+            />
             <a href="#">Submit</a>
           </form>
         </div>
-				<div id="address">
-					<address class="">
-						Aeflora Perfumery<br />
-	          12345 North East Way<br />
-	          Northwest City, PR 98765
-	        </address>
-				</div>
+        <div id="address">
+          <address class="">
+            Aeflora Perfumery<br />
+            12345 North East Way<br />
+            Northwest City, PR 98765
+          </address>
+        </div>
       </section>
     </footer>
-		<script type="text/javascript" src="main.js"></script>
-	</body>
+    <script
+      type="text/javascript"
+      src="main.js"
+    ></script>
+  </body>
 </html>
